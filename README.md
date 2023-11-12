@@ -36,9 +36,11 @@ Whether you're a student looking to calculate your grades or an educator wanting
 # TASK 3: [ATM Interface](task_3.java)
 
 Overview
+
 Welcome to the ATM Project! This Java project aims to simulate the functionality of an ATM with a user-friendly interface. The project is designed to provide essential banking operations such as withdrawing, depositing, and checking the balance.
 
 Project Structure
+
 ATM Class:
 Core class for the ATM machine.
 Implements methods for transactions.
