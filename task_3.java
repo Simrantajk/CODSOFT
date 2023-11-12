@@ -1,6 +1,5 @@
 import java.util.*;
 
-
 class ATM{
     public static int balance;
     public static void withdraw(int amount){
