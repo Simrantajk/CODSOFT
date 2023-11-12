@@ -1,8 +1,7 @@
-package package1;
 import java.util.Random;
 import java.util.*;
 
-public class task1 {
+public class Main {
 	static int trial = 5;
 	static int score =0;
 	static boolean flag = false;
@@ -18,7 +17,7 @@ public class task1 {
 		guess = sc.nextInt();
 		if(guess == rn)
 		{
-			System.out.println("Correct guess");
+			System.out.println("^_^ ~~~Correct guess~~~ ^_^");
 			score = score + 1;
 			flag = true;
 			return;
@@ -32,23 +31,24 @@ public class task1 {
 			System.out.println("low guess");
 		if(i==trial)
 		{
-		System.out.println("\n\n\nYOu ran out of chnaces \n GOOd try and the random number is ");
-		System.out.println(rn);
+		System.out.println("\n\t\t***OOPS You ran out of chances***\nThe Random number is "+rn);
 		again();
 		}
 	}
 	public static void again()
 	{
 		Scanner sc = new Scanner(System.in);
-		System.out.println("\n\n\nDo you wanna restart again? 1 for Yes and 0 for No");
+		System.out.println("\n\nDo you wanna restart again? 1 for Yes and 0 for No");
 		int retry = sc.nextInt();
+		Random rand = new Random();
+		rn = rand.nextInt(100);
 		if(retry == 1)
 		{
 			i =1;
 			start();
 		}
 		else
-			System.out.println("Hope you enjoyed olaying it ");
+			System.out.println("Hope you enjoyed playing it ");
 			System.exit(0);
 		
 	}
@@ -65,7 +65,8 @@ public class task1 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Random rand = new Random();
-		rn = rand.nextInt(0,100);
+		System.out.println("\t\t\t^0^ ***Random Number Guessing Game*** ^0^");
+		rn = rand.nextInt(100);
 		Scanner sc = new Scanner(System.in);
 		start();
 		System.out.println("Score is "+ score);
